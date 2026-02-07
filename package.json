@@ -26,6 +26,9 @@
     "hono": "^4.11.7",
     "zod": "^4.3.6"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "devDependencies": {
     "@types/node": "^20.11.17",
     "drizzle-kit": "^0.31.8",

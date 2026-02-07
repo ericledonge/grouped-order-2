@@ -3,7 +3,7 @@ builder = "nixpacks"
 
 [deploy]
 healthcheckPath = "/health"
-healthcheckTimeout = 5
+healthcheckTimeout = 30
 startCommand = "npx drizzle-kit push && node dist/index.js"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
