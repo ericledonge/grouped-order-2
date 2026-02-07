@@ -20,4 +20,4 @@ COPY --from=builder /app/src/infrastructure/db/schema.ts ./src/infrastructure/db
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "npx drizzle-kit push && node dist/index.js"]
+CMD ["sh", "-c", "npx drizzle-kit push && node dist/src/index.js"]
