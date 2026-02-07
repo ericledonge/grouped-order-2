@@ -19,13 +19,13 @@
 
 ### Backend
 
-- [ ] **INFRA-001** : Configuration Drizzle ORM + connexion Turso
-- [ ] **INFRA-002** : Schéma de base de données (tables: users, orders, wishes, baskets, deposit_points)
-- [ ] **INFRA-003** : Configuration Better Auth avec plugin Admin
-- [ ] **INFRA-004** : Middleware d'authentification Hono
-- [ ] **INFRA-005** : Structure Clean Architecture (routes, services, repositories)
-- [ ] **INFRA-006** : Configuration CORS pour le frontend
-- [ ] **INFRA-007** : Schemas de validation Zod partagés
+- [x] **INFRA-001** : Configuration Drizzle ORM + connexion Turso
+- [x] **INFRA-002** : Schéma de base de données (tables: users, orders, wishes, baskets, deposit_points)
+- [x] **INFRA-003** : Configuration Better Auth avec plugin Admin
+- [x] **INFRA-004** : Middleware d'authentification Hono
+- [x] **INFRA-005** : Structure Clean Architecture (routes, services, repositories)
+- [x] **INFRA-006** : Configuration CORS pour le frontend
+- [x] **INFRA-007** : Schemas de validation Zod partagés
 
 ### Frontend
 
@@ -39,7 +39,7 @@
 
 - [ ] **INFRA-020** : Configuration Railway (backend)
 - [ ] **INFRA-021** : Configuration Vercel (frontend)
-- [ ] **INFRA-022** : Variables d'environnement et secrets
+- [x] **INFRA-022** : Variables d'environnement et secrets
 
 ---
 
@@ -56,14 +56,14 @@
 **Afin de** permettre aux membres de soumettre leurs souhaits
 
 **Critères d'acceptation :**
-- [ ] Formulaire avec type (monthly, private_sale, special) et date cible
-- [ ] Validation : date cible dans le futur
-- [ ] Statut initial "open"
-- [ ] Affichage dans la liste des commandes
+- [~] Formulaire avec type (monthly, private_sale, special) et date cible
+- [x] Validation : date cible dans le futur
+- [x] Statut initial "open"
+- [~] Affichage dans la liste des commandes
 
 **Tâches techniques :**
-- [ ] Backend : `POST /api/orders` + validation Zod
-- [ ] Backend : `GET /api/orders` (liste)
+- [x] Backend : `POST /api/orders` + validation Zod
+- [x] Backend : `GET /api/orders` (liste)
 - [ ] Frontend : Page `/admin/orders/new`
 - [ ] Frontend : Page `/admin/orders` (liste)
 
@@ -81,7 +81,7 @@
 - [ ] Lien vers le détail de la commande
 
 **Tâches techniques :**
-- [ ] Backend : `GET /api/orders?status=open`
+- [x] Backend : `GET /api/orders?status=open`
 - [ ] Frontend : Page `/orders`
 
 ---
@@ -99,8 +99,8 @@
 - [ ] Affichage dans "Mes souhaits"
 
 **Tâches techniques :**
-- [ ] Backend : `POST /api/orders/:orderId/wishes`
-- [ ] Backend : `GET /api/wishes/mine`
+- [x] Backend : `POST /api/orders/:orderId/wishes`
+- [x] Backend : `GET /api/wishes/mine`
 - [ ] Frontend : Page `/orders/:orderId` avec formulaire
 - [ ] Frontend : Page `/my-wishes`
 
@@ -114,13 +114,13 @@
 
 **Critères d'acceptation :**
 - [ ] Sélection de souhaits avec statut "submitted"
-- [ ] Souhaits passent en statut "in_basket"
-- [ ] Panier créé avec statut "draft"
+- [~] Souhaits passent en statut "in_basket"
+- [x] Panier créé avec statut "draft"
 - [ ] Avertissement si total > 300$ CAD
 
 **Tâches techniques :**
-- [ ] Backend : `POST /api/baskets`
-- [ ] Backend : `GET /api/orders/:orderId/wishes?status=submitted`
+- [x] Backend : `POST /api/baskets`
+- [x] Backend : `GET /api/orders/:orderId/wishes?status=submitted`
 - [ ] Frontend : Page `/admin/orders/:orderId/baskets/new`
 
 ---
@@ -140,7 +140,7 @@
 **Tâches techniques :**
 - [ ] Backend : `PATCH /api/baskets/:basketId`
 - [ ] Backend : `POST /api/baskets/:basketId/submit`
-- [ ] Backend : Service `calculateProrataShares()`
+- [x] Backend : Service `calculateProrataShares()`
 - [ ] Frontend : Page `/admin/baskets/:basketId/edit`
 
 ---
