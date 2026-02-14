@@ -15,7 +15,9 @@
     "format:check": "oxfmt --check src/",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:fix": "tsc --noEmit && oxlint --fix src/ && oxfmt src/"
+    "validate:fix": "tsc --noEmit && oxlint --fix src/ && oxfmt src/",
+    "make-admin": "tsx scripts/make-admin.ts",
+    "make-admin:prod": "DOTENV_CONFIG_PATH=.env.prod tsx scripts/make-admin.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.9",
